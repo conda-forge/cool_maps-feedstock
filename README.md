@@ -1,11 +1,11 @@
-About cool_maps
-===============
+About cool_maps-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cool_maps-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/rucool/cool_maps
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cool_maps-feedstock/blob/main/LICENSE.txt)
 
 Summary: Wrapper around Cartopy to easily generate nice-looking maps passing just the extent.
 

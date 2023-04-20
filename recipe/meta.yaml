@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://github.com/rucool/cool_maps
-  summary: 'Wrapper around Cartopy to easily generate nice-looking maps passing just the extent.'
+  summary: Wrapper around Cartopy to easily generate nice-looking maps passing just the extent.
   license: MIT
   license_file: LICENSE
   doc_url: https://cool_maps.readthedocs.io/

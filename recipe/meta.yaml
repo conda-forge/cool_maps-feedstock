@@ -1,5 +1,5 @@
 {% set name = "cool_maps" %}
-{% set version = "1.0.2" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,17 +7,19 @@ package:
 
 source:
   url: https://github.com/rucool/cool_maps/archive/{{ version }}.tar.gz
-  sha256: 725ee5233808926cac7cf61c884dc5718f89c872ea70efc721e2e5728ec1a32b
+  sha256: 9e49be1c33cb412e2cf672660ab3ed10d6be0da3caabe3d77b5d6596bbf0107a
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-build-isolation
   number: 0
 
 requirements:
   host:
     - python >=3.7
     - pip
+    - setuptools
+    - versioneer
   run:
     - python >=3.7
     - cartopy
@@ -25,6 +27,7 @@ requirements:
     - cmocean
     - oceans
     - numpy
+    - xarray
     - erddapy
 
 test:
